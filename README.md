@@ -5,7 +5,7 @@ DOM (Document Object Model) pada JavaScript adalah representasi struktur halaman
 
 ---
 
-### 🧭 Method Seleksi Elemen (Selection/Traversal)
+## 🧭 Method Seleksi Elemen (Selection / Traversal)
 <p align="justify">Digunakan untuk mencari dan mengambil elemen dari dokumen.</p>
 
 ```js
