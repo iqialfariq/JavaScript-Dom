@@ -143,3 +143,129 @@ console.log(h1.hasAttribute("id"));
 console.log(h1.hasAttribute("class")); 
 // Output: false
 ```
+
+---
+
+## 🎭 Method Manipulasi Kelas (Class Handling)
+<p align="justify">Digunakan untuk mengelola kelas CSS dengan classList.</p>
+
+```js
+add() => digunakan untuk menambahkan class
+
+Contoh Penggunaan:
+// ambil id judul lalu simpan ke variabel judul
+const judul = document.getElementById("judul");
+// panggil judul setelah itu tambahkan classlist dan method nya apa
+judul.classList.add("highlight");
+```
+
+```js
+remove() => digunakan untuk menghapus class
+
+Contoh Penggunaan:
+// ambil id judul lalu simpan ke variabel judul
+const judul = document.getElementById("judul");
+// panggil judul setelah itu tambahkan classlist dan method nya apa
+judul.classList.remove("highlight");
+```
+
+```js
+toggle() => digunakan untuk menambahkan class jika belum ada dan menghapus kelas jika sudah ada
+
+Contoh Penggunaan:
+// ambil id judul lalu simpan ke variabel judul
+const judul = document.getElementById("judul");
+// panggil judul setelah itu tambahkan classlist dan method nya apa
+judul.classList.toggle("hidden");
+```
+
+```js
+contains() => digunakan untuk mengecek class
+
+Contoh Penggunaan:
+// ambil id judul lalu simpan ke variabel judul
+const judul = document.getElementById("judul");
+// panggil judul ke dalam console.log setelah itu tambahkan classlist dan method nya apa
+console.log(judul.classList.contains("highlight")); // true
+```
+
+```js
+replace() => digunakan untuk mengganti class
+
+Contoh Penggunaan:
+// ambil id judul lalu simpan ke variabel judul
+const judul = document.getElementById("judul");
+// panggil judul setelah itu tambahkan classlist dan method nya apa
+judul.classList.replace("hidden", "show");
+```
+
+---
+
+## 🗂️ Method Manipulasi Struktur (Structure Modification)
+<p align="justify">Digunakan untuk menambah atau menghapus elemen.</p>
+
+```js
+createElement() => digunakan untuk membuat element html baru
+
+Contoh Penggunaan:
+// Buat elemen baru <p>
+let p = document.createElement("p"); // bikin elemen <p>
+```
+
+```js
+createTextNode() => digunakan untuk membuat teks baru di dalam element
+
+Contoh Penggunaan:
+// Buat node teks baru
+let teksBaru = document.createTextNode("Halo cuy, ini teks baru!");
+```
+
+```js
+appendChild() => digunakan untuk menambahkan element html di akhir
+
+Contoh Penggunaan:
+// Tempel ke container
+container.appendChild(p); // masukkan <p> ke dalam #container
+```
+
+```js
+inshertBefore() => digunakan untuk membuat element html diantara element html yang lain
+
+Contoh Penggunaan:
+// Sisipkan itemBaru sebelum itemReferensi
+list.insertBefore(itemBaru, itemReferensi);
+```
+
+```js
+removeChild() => digunakan untuk menghapus element html
+
+Contoh Penggunaan:
+// Ambil elemen anak yang mau dihapus (misalnya li kedua)
+let item = list.children[1]; // <li>B</li>
+// Hapus elemen anak dari parent
+list.removeChild(item);
+```
+
+```js
+replaceChild() => digunakan untuk mengubah element html yang sudah ada
+
+Contoh Penggunaan:
+// Ganti itemLama dengan itemBaru
+list.replaceChild(itemBaru, itemLama);
+```
+
+```js
+cloneNode() => digunakan untuk menggandakan node yang sudah ada
+
+Contoh Penggunaan:
+// Misalnya ada <div id="box"><p>Halo</p></div>
+let box = document.getElementById("box");
+// Clone elemen box (tanpa isi anak)
+let cloneKosong = box.cloneNode(); 
+// hasil: <div id="box"></div>
+// Clone elemen box beserta isi anak
+let cloneLengkap = box.cloneNode(true); 
+// hasil: <div id="box"><p>Halo</p></div>
+// Tempelkan clone ke body
+document.body.appendChild(cloneLengkap);
+```
