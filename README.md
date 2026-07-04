@@ -8,7 +8,7 @@ DOM (Document Object Model) pada JavaScript adalah representasi struktur halaman
 ### 📝 Method Seleksi Elemen (Selection/Traversal)
 <p align="justify">Digunakan untuk mencari dan mengambil elemen dari dokumen.</p>
 
-```
+```js
   getElementById() | menghasilkan Element => digunakan untuk mencari atribut id
 
   Contoh Penggunaan:
@@ -17,4 +17,3 @@ DOM (Document Object Model) pada JavaScript adalah representasi struktur halaman
   
   	// panggil judul lalu tambahkan style dan property css nya
   	judul.style.color = "red";
-```
