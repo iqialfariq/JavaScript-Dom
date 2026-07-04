@@ -8,12 +8,10 @@ DOM (Document Object Model) pada JavaScript adalah representasi struktur halaman
 ### 📝 Method Seleksi Elemen (Selection/Traversal)
 <p align="justify">Digunakan untuk mencari dan mengambil elemen dari dokumen.</p>
 
-```
-getElementById() | menghasilkan Element => digunakan untuk mencari atribut id
-Contoh Penggunaan:
-```
-
 ```js
+getElementById() | menghasilkan Element => digunakan untuk mencari atribut id
+
+Contoh Penggunaan:
 // ambil id judul lalu simpan ke dalam variabel judul
 let judul = document.getElementById("judul");
   
@@ -21,11 +19,10 @@ let judul = document.getElementById("judul");
 judul.style.color = "red";
 ```
 
-```
-getElementsByClassName() | menghasilkan HtmlCollection => digunakan untuk mencari atribut class
-Contoh Penggunaan:
-```
 ```js
+getElementsByClassName() | menghasilkan HtmlCollection => digunakan untuk mencari atribut class
+
+Contoh Penggunaan:
 // ambil class P1 lalu simpan ke dalam variabel P1
 let p1 = document.getElementsByClassName("p1");
 
@@ -33,22 +30,21 @@ let p1 = document.getElementsByClassName("p1");
 p1[0].style.color = "red";
 ```
 
-```
-getElementsByTagName() | menghasilkan HtmlCollection => digunakan untuk mencari tag html
-Contoh Penggunaan:
-```
 ```js
+getElementsByTagName() | menghasilkan HtmlCollection => digunakan untuk mencari tag html
+
+Contoh Penggunaan:
 // ambil tag P lalu simpan ke dalam variabel P
 let p = document.getElementsByTagName("p");
 
 // panggil P setelah itu tambahkan [index] lalu style dan property css nya
 p[2].style.backgroundColor = "aqua";
 ```
-```
-querySelector() | menghasilkan Element => digunakan untuk mencari tag html secara spesifik
-Contoh Penggunaan:
-```
+
 ```js
+querySelector() | menghasilkan Element => digunakan untuk mencari tag html secara spesifik
+
+Contoh Penggunaan:
 // ambil id B yang di dalam nya ada p lalu simpan ke dalam variabel P4
 const p4 = document.querySelector("#b p");
 
@@ -56,11 +52,10 @@ const p4 = document.querySelector("#b p");
 p4.style.color = "green";
 ```
 
-```
-querySelectorAll() | menghasilkan NodeList => digunakan untuk mencari tag html secara keseluruhan
-Contoh Penggunaan:
-```
 ```js
+querySelectorAll() | menghasilkan NodeList => digunakan untuk mencari tag html secara keseluruhan
+
+Contoh Penggunaan:
 // ambil tag P lalu simpan ke dalam variabel PAll
 const pAll = document.querySelectorAll("p");
 
