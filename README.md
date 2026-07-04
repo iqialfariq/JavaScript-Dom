@@ -14,6 +14,7 @@ getElementById() | menghasilkan Element → digunakan untuk mencari atribut id
 Contoh Penggunaan:
 // ambil id judul lalu simpan ke dalam variabel judul
 let judul = document.getElementById("judul");
+
 // panggil judul lalu tambahkan style dan property css nya
 judul.style.color = "red";
 ```
@@ -24,6 +25,7 @@ getElementsByClassName() | menghasilkan HtmlCollection → digunakan untuk menca
 Contoh Penggunaan:
 // ambil class P1 lalu simpan ke dalam variabel P1
 let p1 = document.getElementsByClassName("p1");
+
 // panggil P1 setelah itu tambahkan [index] lalu style dan property css nya
 p1[0].style.color = "red";
 ```
@@ -34,6 +36,7 @@ getElementsByTagName() | menghasilkan HtmlCollection → digunakan untuk mencari
 Contoh Penggunaan:
 // ambil tag P lalu simpan ke dalam variabel P
 let p = document.getElementsByTagName("p");
+
 // panggil P setelah itu tambahkan [index] lalu style dan property css nya
 p[2].style.backgroundColor = "aqua";
 ```
@@ -44,6 +47,7 @@ querySelector() | menghasilkan Element → digunakan untuk mencari tag html seca
 Contoh Penggunaan:
 // ambil id B yang di dalam nya ada p lalu simpan ke dalam variabel P4
 const p4 = document.querySelector("#b p");
+
 // panggil P4 setelah itu tambahkan style dan property css nya
 p4.style.color = "green";
 ```
@@ -54,6 +58,7 @@ querySelectorAll() | menghasilkan NodeList → digunakan untuk mencari tag html 
 Contoh Penggunaan:
 // ambil tag P lalu simpan ke dalam variabel PAll
 const pAll = document.querySelectorAll("p");
+
 // panggil PAll setelah itu tambahkan style dan property css nya
 pAll[2].style.backgroundColor = "aqua";
 ```
@@ -69,6 +74,7 @@ innerHTML (bukan method, tapi properti yang sering dipakai) → digunakan untuk 
 Contoh Penggunaan:
 // ambil id judul lalu simpan ke dalam variabel judulku
 const judulku = document.getElementById("judul");
+
 // panggil judulku setelah itu tambahkan style dan property css nya
 judulku.innerHTML = "ini diubah di js";
 ```
@@ -79,6 +85,7 @@ textContent → digunakan untuk merubah isi konten berupa text
 Contoh Penggunaan:
 // ambil id judul lalu simpan ke dalam variabel judulku
 const judulku = document.getElementById("judul");
+
 // panggil judulku setelah itu tambahkan style dan property css nya
 judulku.textContent = "ini di ubah pakai text content";
 ```
@@ -89,8 +96,10 @@ insertAdjacentHTML() → digunakan untuk menyisipkan tag html
 Contoh Penggunaan:
 // ambil id kontainer lalu simpan ke variabel kontainerku
 const kontainerku = document.getElementById("kontainer");
+
 // sisipkan tag HTML baru di akhir isi kontainer
 kontainerku.insertAdjacentHTML("beforeend", "<p>Paragraf tambahan dari JS</p>");
+
 // sisipkan tag HTML baru di awal isi kontainer
 kontainerku.insertAdjacentHTML("afterbegin", "<button>Klik Saya</button>");
 ```
@@ -106,6 +115,7 @@ setAttribute() → digunakan untuk menambahkan atribut baru beserta isi nya
 Contoh Penggunaan:
 // ambil tag h1 lalu simpan ke variabel h1
 const h1 = document.querySelector("h1");
+
 // buat nama atribut nya apa lalu atribut nya apa setelah itu simpan ke variabel h2
 h1.setAttribute("id", "judulUtama");
 ```
@@ -116,8 +126,10 @@ getAttribute() → digunakan untuk mengetahui isi atribut di tag html
 Contoh Penggunaan:
 // ambil tag h1 lalu simpan ke variabel h1
 const h1 = document.querySelector("h1");
+
 // ambil atribut id yang ada di dalam variabel h1 lalu simpan ke variabel nilaiId
 const nilaiId = h1.getAttribute("id");
+
 console.log(nilaiId); // Output: "judulUtama"
 ```
 
@@ -127,6 +139,7 @@ removeAttribute() → digunakan untuk menghapus atribut
 Contoh Penggunaan:
 // ambil tag h1 lalu simpan ke variabel h1
 const h1 = document.querySelector("h1");
+
 // ambil atribut yang ingin di hapus
 h1.removeAttribute("id");
 ```
@@ -136,8 +149,10 @@ hasAttribute() → digunakan untuk Mengecek apakah sebuah elemen memiliki atribu
 
 Contoh Penggunaan:
 const h1 = document.querySelector("h1");
+
 // Cek apakah ada atribut "id"
-console.log(h1.hasAttribute("id")); 
+console.log(h1.hasAttribute("id"));
+
 // Output: true
 // Cek apakah ada atribut "class"
 console.log(h1.hasAttribute("class")); 
@@ -155,6 +170,7 @@ add() → digunakan untuk menambahkan class
 Contoh Penggunaan:
 // ambil id judul lalu simpan ke variabel judul
 const judul = document.getElementById("judul");
+
 // panggil judul setelah itu tambahkan classlist dan method nya apa
 judul.classList.add("highlight");
 ```
@@ -165,6 +181,7 @@ remove() → digunakan untuk menghapus class
 Contoh Penggunaan:
 // ambil id judul lalu simpan ke variabel judul
 const judul = document.getElementById("judul");
+
 // panggil judul setelah itu tambahkan classlist dan method nya apa
 judul.classList.remove("highlight");
 ```
@@ -175,6 +192,7 @@ toggle() → digunakan untuk menambahkan class jika belum ada dan menghapus kela
 Contoh Penggunaan:
 // ambil id judul lalu simpan ke variabel judul
 const judul = document.getElementById("judul");
+
 // panggil judul setelah itu tambahkan classlist dan method nya apa
 judul.classList.toggle("hidden");
 ```
@@ -185,6 +203,7 @@ contains() → digunakan untuk mengecek class
 Contoh Penggunaan:
 // ambil id judul lalu simpan ke variabel judul
 const judul = document.getElementById("judul");
+
 // panggil judul ke dalam console.log setelah itu tambahkan classlist dan method nya apa
 console.log(judul.classList.contains("highlight")); // true
 ```
@@ -195,6 +214,7 @@ replace() → digunakan untuk mengganti class
 Contoh Penggunaan:
 // ambil id judul lalu simpan ke variabel judul
 const judul = document.getElementById("judul");
+
 // panggil judul setelah itu tambahkan classlist dan method nya apa
 judul.classList.replace("hidden", "show");
 ```
@@ -284,6 +304,7 @@ addEventListener() → digunakan untuk menangkap interaksi events
 Contoh Penggunaan:
 // Ambil elemen target (misalnya tombol)
 let tombol = document.getElementById("btn");
+
 // Tambahkan event listener untuk klik
 tombol.addEventListener("click", function() {
   // Setelah di klik tampilkan alert()
@@ -297,10 +318,12 @@ removeEventListener() → digunakan untuk menghapus event listener
 Contoh Penggunaan:
 // Ambil elemen target (misalnya tombol)
 let tombol = document.getElementById("btn");
+
 // Buat fungsi handler
 function klikHandler() {
   alert("Tombol diklik cuy!");
 }
+
 // Pasang event listener
 tombol.addEventListener("click", klikHandler);
 // Hapus event listener
@@ -315,10 +338,12 @@ Contoh Penggunaan:
 let tombol = document.getElementById("btn");
 // Buat event baru bertipe "click"
 let eventKlik = new Event("click");
+
 // Pasang listener untuk menangkap event
 tombol.addEventListener("click", function() {
   alert("Event klik dipicu cuy!");
 });
+
 // Jalankan event secara manual
 tombol.dispatchEvent(eventKlik);
 ```
@@ -385,6 +410,7 @@ parentNode → ambil induk dari list
 Contoh Penggunaan:
 let item = document.querySelector("#list li"); 
 // ambil elemen <li>
+
 // Ambil induk dari elemen <li>
 let induk = item.parentNode; 
 // parentNode → ambil elemen induk (dalam hal ini <ul>)
@@ -426,6 +452,7 @@ nextSibling → saudara setelah list
 Contoh Penggunaan:
 let itemB = document.querySelector("#list li:nth-child(2)"); 
 // ambil elemen <li>B</li>
+
 // Ambil saudara setelahnya
 let saudaraSetelah = itemB.nextSibling; 
 // nextSibling → ambil node setelahnya (bisa elemen <li>C</li> atau text node spasi/enter)
@@ -437,6 +464,7 @@ previousSibling → saudara sebelum list
 Contoh Penggunaan:
 let itemB = document.querySelector("#list li:nth-child(2)"); 
 // ambil elemen <li>B</li>
+
 // Ambil saudara sebelum elemen B
 let saudaraSebelum = itemB.previousSibling; 
 // previousSibling → ambil node saudara sebelum elemen (bisa text node spasi/enter atau elemen <li>A</li>)
@@ -478,6 +506,7 @@ nextElementSibling → elemen saudara setelah firstItem
 Contoh Penggunaan:
 let firstItem = document.getElementById("firstItem"); 
 // ambil elemen <li>A</li>
+
 // Ambil elemen saudara setelahnya
 let saudaraSetelah = firstItem.nextElementSibling; 
 // nextElementSibling → ambil elemen saudara setelahnya (langsung <li>B</li>, tidak kena text node spasi/enter)
@@ -489,6 +518,7 @@ previousElementSibling → elemen saudara sebelum lastItem
 Contoh Penggunaan:
 let lastItem = document.getElementById("lastItem"); 
 // ambil elemen <li>C</li>
+
 // Ambil elemen saudara sebelum lastItem
 let saudaraSebelum = lastItem.previousElementSibling; 
 // previousElementSibling → ambil elemen saudara sebelum elemen tertentu (langsung <li>B</li>, tidak kena text node spasi/enter)
@@ -504,9 +534,11 @@ preventDefault() adalah sebuah method di JavaScript yang digunakan untuk mencega
 ```js
 Contoh Penggunaan:
 let form = document.getElementById("myForm");
+
 form.addEventListener("submit", function(event) {
   event.preventDefault(); 
   // preventDefault → mencegah aksi bawaan (submit form reload halaman)
+
   // Ganti dengan aksi custom
   alert("Form dicegah submit, data bisa diproses manual cuy!");
 });
@@ -522,7 +554,8 @@ Event Bubbling adalah mekanisme di JavaScript di mana sebuah event yang terjadi 
 
 ```js
 child.addEventListener("click", (e) => {
-  e.stopPropagation(); 
+  e.stopPropagation();
+
   console.log("Klik child, bubbling dihentikan");
 });
 ```
