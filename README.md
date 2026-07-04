@@ -328,7 +328,7 @@ tombol.dispatchEvent(eventKlik);
 ## Macam-macam Event Yang Sering Digunakan:
 
 ```
-Mouse Events => Digunakan untuk interaksi berbasis klik dan gerakan kursor.
+Mouse Events | Digunakan untuk interaksi berbasis klik dan gerakan kursor.
 - click → saat elemen diklik.
 - dblclick → saat elemen diklik dua kali.
 - mousemove → saat kursor bergerak di atas elemen.
@@ -336,14 +336,14 @@ Mouse Events => Digunakan untuk interaksi berbasis klik dan gerakan kursor.
 ```
 
 ```
-Keyboard Events => Dipakai untuk input berbasis keyboard.
+Keyboard Events | Dipakai untuk input berbasis keyboard.
 - keydown → saat tombol ditekan.
 - keypress → saat tombol ditekan (deprecated di beberapa browser, diganti dengan keydown).
 - keyup → saat tombol dilepas.
 ```
 
 ```
-Form Events => Sangat penting dalam aplikasi web yang melibatkan input pengguna.
+Form Events | Sangat penting dalam aplikasi web yang melibatkan input pengguna.
 - submit → saat form dikirim.
 - change → saat nilai input berubah.
 - focus → saat input mendapat fokus.
@@ -351,14 +351,14 @@ Form Events => Sangat penting dalam aplikasi web yang melibatkan input pengguna.
 ```
 
 ```
-Window & Document Events => Dipakai untuk mengontrol perilaku halaman secara keseluruhan.
+Window & Document Events | Dipakai untuk mengontrol perilaku halaman secara keseluruhan.
 - load → saat halaman selesai dimuat.
 - resize → saat ukuran jendela browser berubah.
 - scroll → saat pengguna menggulir halaman.
 ```
 
 ```
-Input & UI Events => Digunakan untuk interaksi lebih detail.
+Input & UI Events | Digunakan untuk interaksi lebih detail.
 - input → saat nilai input berubah (lebih real-time dibanding change).
 - select → saat teks dalam input dipilih.
 ```
@@ -512,7 +512,9 @@ form.addEventListener("submit", function(event) {
 });
 ```
 
-## ✋ Penjelasan Event Bubbling
+---
+
+## 🫧 Penjelasan Event Bubbling
 <p align="justify">
 Event Bubbling adalah mekanisme di JavaScript di mana sebuah event yang terjadi pada elemen anak akan “naik” (bubble up) ke elemen induknya, lalu ke induk yang lebih tinggi, hingga mencapai root
 (document).
