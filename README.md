@@ -57,3 +57,89 @@ const pAll = document.querySelectorAll("p");
 // panggil PAll setelah itu tambahkan style dan property css nya
 pAll[2].style.backgroundColor = "aqua";
 ```
+
+---
+
+## ✏️ Method Manipulasi Konten (Content Manipulation)
+<p align="justify">Digunakan untuk mengubah isi teks atau HTML.</p>
+
+```js
+innerHTML (bukan method, tapi properti yang sering dipakai) => digunakan untuk merubah tag Html
+
+Contoh Penggunaan:
+// ambil id judul lalu simpan ke dalam variabel judulku
+const judulku = document.getElementById("judul");
+// panggil judulku setelah itu tambahkan style dan property css nya
+judulku.innerHTML = "ini diubah di js";
+```
+
+```js
+textContent => digunakan untuk merubah isi konten berupa text
+
+Contoh Penggunaan:
+// ambil id judul lalu simpan ke dalam variabel judulku
+const judulku = document.getElementById("judul");
+// panggil judulku setelah itu tambahkan style dan property css nya
+judulku.textContent = "ini di ubah pakai text content";
+```
+
+```js
+insertAdjacentHTML() => digunakan untuk menyisipkan tag html
+
+Contoh Penggunaan:
+// ambil id kontainer lalu simpan ke variabel kontainerku
+const kontainerku = document.getElementById("kontainer");
+// sisipkan tag HTML baru di akhir isi kontainer
+kontainerku.insertAdjacentHTML("beforeend", "<p>Paragraf tambahan dari JS</p>");
+// sisipkan tag HTML baru di awal isi kontainer
+kontainerku.insertAdjacentHTML("afterbegin", "<button>Klik Saya</button>");
+```
+
+---
+
+## 🏷️ Method Manipulasi Atribut (Attribute Handling)
+<p align="justify">Digunakan untuk mengatur atau membaca atribut elemen.</p>
+
+```js
+setAttribute() => digunakan untuk menambahkan atribut baru beserta isi nya
+
+Contoh Penggunaan:
+// ambil tag h1 lalu simpan ke variabel h1
+const h1 = document.querySelector("h1");
+// buat nama atribut nya apa lalu atribut nya apa setelah itu simpan ke variabel h2
+h1.setAttribute("id", "judulUtama");
+```
+
+```js
+getAttribute() => digunakan untuk mengetahui isi atribut di tag html
+
+Contoh Penggunaan:
+// ambil tag h1 lalu simpan ke variabel h1
+const h1 = document.querySelector("h1");
+// ambil atribut id yang ada di dalam variabel h1 lalu simpan ke variabel nilaiId
+const nilaiId = h1.getAttribute("id");
+console.log(nilaiId); // Output: "judulUtama"
+```
+
+```js
+removeAttribute() => digunakan untuk menghapus atribut
+
+Contoh Penggunaan:
+// ambil tag h1 lalu simpan ke variabel h1
+const h1 = document.querySelector("h1");
+// ambil atribut yang ingin di hapus
+h1.removeAttribute("id");
+```
+
+```js
+hasAttribute() => digunakan untuk Mengecek apakah sebuah elemen memiliki atribut tertentu. | Return value: true jika atribut ada, false jika tidak ada.
+
+Contoh Penggunaan:
+const h1 = document.querySelector("h1");
+// Cek apakah ada atribut "id"
+console.log(h1.hasAttribute("id")); 
+// Output: true
+// Cek apakah ada atribut "class"
+console.log(h1.hasAttribute("class")); 
+// Output: false
+```
