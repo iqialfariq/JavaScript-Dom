@@ -17,3 +17,14 @@ DOM (Document Object Model) pada JavaScript adalah representasi struktur halaman
   
   	// panggil judul lalu tambahkan style dan property css nya
   	judul.style.color = "red";
+
+```js
+  getElementById() | menghasilkan Element => digunakan untuk mencari atribut id
+
+  Contoh Penggunaan:
+    // ambil id judul lalu simpan ke dalam variabel judul
+    let judul = document.getElementById("judul");
+  
+  	// panggil judul lalu tambahkan style dan property css nya
+  	judul.style.color = "red";
+
